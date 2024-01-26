@@ -15,12 +15,12 @@ import com.mongodb.client.MongoClients;
 @Configuration
 public class AppConfig {
 
-	@Value("${spring.data.mongodb.uri}")
-	private String mongoUri;
+	// @Value("${spring.data.mongodb.uri}")
+	// private String mongoUri;
 
-	@Bean
-	public MongoTemplate createMongoTemplate() {
-		final MongoClient client = MongoClients.create(mongoUri);
-		return new MongoTemplate(client, "bedandbreakfast");
-	}
+	// @Bean
+	// public MongoTemplate createMongoTemplate() {
+	// 	final MongoClient client = MongoClients.create(mongoUri);
+	// 	return new MongoTemplate(client, "bedandbreakfast");
+	// }
 }

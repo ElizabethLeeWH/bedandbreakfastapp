@@ -19,7 +19,7 @@ FROM maven:3-eclipse-temurin-21
 
 WORKDIR /app 
 
-COPY --from=builder /src/target/bedandbreakfastapp-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /src/target/assessment-0.0.1-SNAPSHOT.jar app.jar
 
 ## Run the application
 # Define environment variable 
